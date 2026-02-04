@@ -4,20 +4,20 @@
 
 ## 🎯 THIS WEEK: Quick Wins
 
-### Priority 1: Installation & Setup (2-3 hours)
+### Priority 1: Installation & Setup (2-3 hours) ✅ COMPLETE!
 - [x] Create `install.sh` automated installer
 - [x] Add pre-install checks (`scripts/pre-install-check.js`)
 - [ ] Test installation on fresh OpenClaw instance
 - [ ] Document any issues found
 
-### Priority 2: OAuth Improvements (3-4 hours)
+### Priority 2: OAuth Improvements (3-4 hours) ✅ COMPLETE!
 - [x] Create OAuth wizard (`scripts/oauth-wizard.js`)
 - [x] Add OAuth status checker (`npm run oauth:status`)
-- [ ] Improve error messages for auth failures
+- [x] Improve error messages for auth failures
 - [ ] Test OAuth flow end-to-end
 
 ### Priority 3: Documentation (2-3 hours)
-- [ ] Expand SKILL.md with real usage examples
+- [x] Expand SKILL.md with real usage examples
 - [ ] Add troubleshooting section
 - [ ] Create quick start video (5 min screencast)
 - [ ] Update README with better examples
