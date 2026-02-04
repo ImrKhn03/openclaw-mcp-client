@@ -65,7 +65,124 @@ When a server requires OAuth, the skill will:
 
 Once installed, the skill automatically registers all MCP tools as OpenClaw commands!
 
-### Natural Language Examples
+### Real-World Usage Examples
+
+#### 🛒 Grocery Shopping (Swiggy Instamart)
+
+**You:** "I need milk and bread from Instamart"
+
+**OpenClaw:**
+1. Searches Instamart for "milk" and "bread"
+2. Shows product options with prices
+3. Asks which ones you want
+4. Adds to cart
+5. Shows cart summary
+6. Places order on confirmation
+
+**Example conversation:**
+```
+You: Order milk from Instamart
+
+Bot: Found these options:
+1. Nandini Toned Milk 500ml - ₹24
+2. Amul Gold Milk 500ml - ₹32
+3. Mother Dairy Milk 500ml - ₹26
+
+You: The first one
+
+Bot: Added Nandini Toned Milk to cart!
+    
+    Cart Total: ₹24
+    Delivery: FREE (minimum order met)
+    
+    Place order?
+
+You: Yes
+
+Bot: ✅ Order placed! Order ID: #123456
+    ETA: 15 minutes
+```
+
+#### 🍛 Food Ordering (Swiggy)
+
+**You:** "Find good biryani places"
+
+**OpenClaw:**
+1. Searches Swiggy for biryani restaurants
+2. Shows top-rated options nearby
+3. Displays menus
+4. Helps add items to cart
+5. Manages order placement
+
+**Example:**
+```
+You: Order chicken biryani for lunch, budget ₹300
+
+Bot: Found 8 restaurants! Top picks:
+1. Paradise Biryani - ₹250 (4.5⭐, 25 min)
+2. Meghana Biryani - ₹280 (4.6⭐, 30 min)
+3. Empire Restaurant - ₹220 (4.4⭐, 20 min)
+
+You: Meghana looks good
+
+Bot: Meghana Biryani menu:
+- Chicken Dum Biryani (full) - ₹280
+- Chicken 65 Biryani - ₹300
+- Chicken Fry Piece Biryani - ₹290
+
+You: The first one
+
+Bot: Added Chicken Dum Biryani to cart!
+    Total: ₹280 + ₹40 delivery = ₹320
+    
+    Continue to checkout?
+```
+
+#### 🔍 Restaurant Discovery (Zomato)
+
+**You:** "Show me top Italian restaurants with outdoor seating"
+
+**OpenClaw:**
+1. Searches Zomato with filters
+2. Shows restaurants matching criteria
+3. Displays reviews, ratings, prices
+4. Can book tables (if Dineout integrated)
+
+#### 🛠️ Multi-Server Workflows
+
+**You:** "Compare biryani prices between Swiggy and Zomato"
+
+**OpenClaw:**
+1. Searches both platforms simultaneously
+2. Compares prices, ratings, delivery times
+3. Presents side-by-side comparison
+4. Lets you choose the best option
+
+### Natural Language Commands
+
+The skill understands these patterns:
+
+**Food Ordering:**
+- "Order [food] from [service]"
+- "Find [cuisine] restaurants"
+- "Show me the menu for [restaurant]"
+- "What's good at [restaurant]?"
+- "Add [item] to cart"
+
+**Groceries:**
+- "Buy [item] from Instamart"
+- "Search for [product]"
+- "Add [item] to grocery cart"
+- "Check my Instamart cart"
+- "Place grocery order"
+
+**General:**
+- "What MCP tools are available?"
+- "Check my [service] orders"
+- "Track order #[id]"
+- "What can you do with MCP?"
+
+### Natural Language Examples (Original)
 
 ```
 "Order biryani from Swiggy"
