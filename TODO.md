@@ -6,7 +6,7 @@
 
 ### Priority 1: Installation & Setup (2-3 hours)
 - [x] Create `install.sh` automated installer
-- [ ] Add pre-install checks (`scripts/pre-install-check.js`)
+- [x] Add pre-install checks (`scripts/pre-install-check.js`)
 - [ ] Test installation on fresh OpenClaw instance
 - [ ] Document any issues found
 
