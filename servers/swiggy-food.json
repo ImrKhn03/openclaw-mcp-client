@@ -1,0 +1,20 @@
+{
+  "name": "swiggy-food",
+  "type": "http",
+  "url": "https://mcp.swiggy.com/food",
+  "enabled": true,
+  "description": "Swiggy Food Ordering - Search restaurants, browse menus, manage cart, and order food",
+  "oauth": {
+    "required": true,
+    "authUrl": "https://mcp.swiggy.com/food/oauth/authorize",
+    "tokenUrl": "https://mcp.swiggy.com/food/oauth/token",
+    "scopes": ["food.read", "food.order"]
+  },
+  "features": [
+    "Restaurant search by cuisine, location, name",
+    "Menu browsing with prices and ratings",
+    "Cart management",
+    "Order placement (COD only)",
+    "Order tracking"
+  ]
+}

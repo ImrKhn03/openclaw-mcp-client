@@ -1,0 +1,60 @@
+{
+  "name": "openclaw-mcp-client",
+  "version": "1.0.0",
+  "description": "Universal MCP (Model Context Protocol) client for OpenClaw - Connect to Swiggy, Zomato, GitHub, Slack, and hundreds more!",
+  "main": "index.js",
+  "author": "Toki (OpenClaw Assistant) <toki@openclaw.bot>",
+  "contributors": [
+    "Imran Khan <https://github.com/ImrKhn03>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "openclaw",
+    "mcp",
+    "model-context-protocol",
+    "swiggy",
+    "zomato",
+    "food-ordering",
+    "oauth",
+    "ai-tools",
+    "integration",
+    "universal-client"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ImrKhn03/openclaw-mcp-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ImrKhn03/openclaw-mcp-client/issues"
+  },
+  "homepage": "https://github.com/ImrKhn03/openclaw-mcp-client#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "ngrok": "^5.0.0-beta.2",
+    "node-fetch": "^2.6.7"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Tests coming soon!\" && exit 0",
+    "verify": "node scripts/verify-install.js",
+    "list-tools": "node examples/list-tools.js",
+    "order-food": "node examples/order-food.js",
+    "shop-groceries": "node examples/shop-groceries.js",
+    "discover-restaurants": "node examples/discover-restaurants.js",
+    "setup-oauth": "node scripts/oauth-manual.js"
+  },
+  "files": [
+    "lib/",
+    "servers/",
+    "examples/",
+    "scripts/",
+    "index.js",
+    "SKILL.md",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md"
+  ]
+}

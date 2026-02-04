@@ -1,0 +1,17 @@
+{
+  "name": "allinonemcp",
+  "type": "http",
+  "url": "https://mcp.pfvc.io/mcp/",
+  "enabled": false,
+  "description": "AllInOneMCP - Central hub for discovering and using MCP servers - NO AUTHENTICATION REQUIRED",
+  "oauth": {
+    "required": false
+  },
+  "features": [
+    "Discover available MCP servers",
+    "Learn how to install MCP servers",
+    "Browse MCP server catalog",
+    "Get server documentation"
+  ],
+  "note": "REMOTE MCP server - remember the final backslash in URL"
+}

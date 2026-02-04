@@ -1,0 +1,19 @@
+{
+  "name": "swiggy-instamart",
+  "type": "http",
+  "url": "https://mcp.swiggy.com/im",
+  "enabled": true,
+  "description": "Swiggy Instamart - Grocery delivery in minutes",
+  "oauth": {
+    "required": true,
+    "authUrl": "https://mcp.swiggy.com/im/oauth/authorize",
+    "tokenUrl": "https://mcp.swiggy.com/im/oauth/token",
+    "scopes": ["instamart.read", "instamart.order"]
+  },
+  "features": [
+    "Product search by name, category, brand",
+    "Cart management with bill breakdown",
+    "Order placement (COD only)",
+    "Delivery tracking"
+  ]
+}

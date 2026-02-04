@@ -1,0 +1,17 @@
+{
+  "name": "coincap",
+  "type": "http",
+  "url": "https://api.coincap.io/v2/mcp",
+  "enabled": false,
+  "description": "Real-time cryptocurrency market data through CoinCap's public API - NO AUTHENTICATION REQUIRED",
+  "oauth": {
+    "required": false
+  },
+  "features": [
+    "Get cryptocurrency prices",
+    "Market data and statistics",
+    "Historical price data",
+    "Asset rankings",
+    "Market cap information"
+  ]
+}

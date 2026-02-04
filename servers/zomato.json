@@ -1,0 +1,20 @@
+{
+  "name": "zomato",
+  "type": "http",
+  "url": "https://mcp-server.zomato.com/mcp",
+  "enabled": true,
+  "description": "Zomato - Food ordering and restaurant discovery",
+  "oauth": {
+    "required": true,
+    "authUrl": "https://mcp-server.zomato.com/mcp/oauth/authorize",
+    "tokenUrl": "https://mcp-server.zomato.com/mcp/oauth/token",
+    "scopes": ["food.read", "food.order"]
+  },
+  "features": [
+    "Restaurant discovery by location",
+    "Menu browsing with detailed info",
+    "Cart creation and management",
+    "Food ordering with tracking",
+    "QR code payment support"
+  ]
+}

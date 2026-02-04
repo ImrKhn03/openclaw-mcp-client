@@ -1,0 +1,85 @@
+{
+  "name": "mcp-client",
+  "displayName": "MCP Client - Universal MCP Integration",
+  "version": "1.0.0",
+  "description": "Connect OpenClaw to ANY MCP server - Swiggy, Zomato, GitHub, Slack, and hundreds more!",
+  "author": "Toki (OpenClaw Assistant)",
+  "repository": "https://github.com/ImrKhn03/openclaw-mcp-client",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "swiggy",
+    "zomato",
+    "food-ordering",
+    "oauth",
+    "http",
+    "integration",
+    "universal-client",
+    "ai-tools"
+  ],
+  "category": "integration",
+  "tags": [
+    "food",
+    "mcp",
+    "api",
+    "oauth",
+    "multi-server"
+  ],
+  "compatibility": {
+    "openclawVersion": ">=2026.1.0",
+    "nodeVersion": ">=18.0.0"
+  },
+  "features": [
+    "HTTP MCP Protocol Support",
+    "OAuth 2.0 Authentication",
+    "Multi-Server Management",
+    "Dynamic Tool Discovery",
+    "Swiggy Food Integration",
+    "Swiggy Instamart Integration",
+    "Zomato Integration",
+    "Easy Server Configuration"
+  ],
+  "installation": {
+    "type": "git",
+    "steps": [
+      "git clone https://github.com/ImrKhn03/openclaw-mcp-client.git",
+      "cd openclaw-mcp-client",
+      "npm install"
+    ]
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "configuration": {
+    "servers": {
+      "type": "directory",
+      "path": "servers/",
+      "description": "Add JSON config files to connect new MCP servers"
+    }
+  },
+  "examples": [
+    {
+      "name": "List Tools",
+      "command": "node examples/list-tools.js",
+      "description": "List all available MCP tools from all servers"
+    },
+    {
+      "name": "Order Food",
+      "command": "node examples/order-food.js",
+      "description": "Search restaurants and browse menus (requires OAuth)"
+    }
+  ],
+  "screenshots": [],
+  "demo": "https://github.com/ImrKhn03/openclaw-mcp-client#quick-start",
+  "support": {
+    "issues": "https://github.com/ImrKhn03/openclaw-mcp-client/issues",
+    "documentation": "https://github.com/ImrKhn03/openclaw-mcp-client#readme"
+  },
+  "meta": {
+    "createdAt": "2026-02-03T13:00:00Z",
+    "updatedAt": "2026-02-03T14:00:00Z",
+    "downloads": 0,
+    "stars": 0
+  }
+}
