@@ -43,6 +43,8 @@
     "order-food": "node examples/order-food.js",
     "shop-groceries": "node examples/shop-groceries.js",
     "discover-restaurants": "node examples/discover-restaurants.js",
+    "oauth": "node scripts/oauth-wizard.js",
+    "oauth:status": "node scripts/oauth-status.js",
     "setup-oauth": "node scripts/oauth-manual.js"
   },
   "files": [
