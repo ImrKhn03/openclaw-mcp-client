@@ -26,10 +26,10 @@
 
 ## 🚀 NEXT WEEK: Universal Support
 
-### Priority 1: STDIO Transport (4-5 hours)
-- [ ] Research STDIO MCP spec
-- [ ] Create `lib/stdio-transport.js`
-- [ ] Update `lib/mcp-client.js` to auto-detect transport
+### Priority 1: STDIO Transport (4-5 hours) ✅ COMPLETE!
+- [x] Research STDIO MCP spec
+- [x] Create `lib/stdio-transport.js`
+- [x] Update `lib/mcp-client.js` to auto-detect transport
 - [ ] Test with a STDIO MCP server (e.g., filesystem-server)
 - [ ] Add documentation
 
