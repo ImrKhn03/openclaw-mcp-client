@@ -1,5 +1,38 @@
 # OpenClaw MCP Client
 
+### Quick Start
+
+1. Run the installation script:
+
+   ```bash
+   ./install.sh
+   ```
+
+2. Check OAuth status:
+
+   ```bash
+   npm run oauth:status
+   ```
+
+3. Configure any servers requiring OAuth:
+
+   ```bash
+   npm run oauth <server-name>
+   ```
+
+4. Test the installed tools:
+
+   ```bash
+   node index.js # List all MCP servers
+   npm run list-tools # List available tools
+   ```
+
+### Troubleshooting
+
+- **Node.js Version:** Ensure Node.js ≥18 is installed.
+- **Server issues:** Check configs under the `servers/` directory.
+- **Dependency issues:** Run `npm install` again or check `package.json` dependencies.
+
 ```
    ___                   _____ _                  __  __  _____ _____  
   / _ \ _ __   ___ _ __ / ____| |                |  \/  |/ ____|  __ \ 

@@ -308,6 +308,102 @@ node index.js
 └────────┘ └────────┘ └────────┘ └───────┘
 ```
 
+## Troubleshooting
+
+### OAuth Not Working
+
+**Symptoms:**
+- Getting 401/403 errors when calling tools
+- OAuth wizard completes but tools still fail
+
+**Solutions:**
+1. Check OAuth status: `npm run oauth:status`
+2. Re-run OAuth wizard for the failing server: `npm run oauth <server-name>`
+3. Verify server config has correct OAuth endpoints
+4. Check `.oauth-tokens.json` has a valid token for the server
+
+### Tools Not Showing Up
+
+**Symptoms:**
+- `npm run list-tools` shows no tools or fewer than expected
+- Server is enabled but tools missing
+
+**Solutions:**
+1. Check server is enabled in config: `"enabled": true`
+2. Verify server URL is reachable: `curl <server-url>/mcp/v1/tools`
+3. Check for errors in console output when running commands
+4. Try disabling and re-enabling the server
+
+### Connection Errors
+
+**Symptoms:**
+- `ECONNREFUSED`, `ETIMEDOUT`, or network errors
+- "Failed to fetch tools" messages
+
+**Solutions:**
+1. Verify server URL is correct (include `https://`)
+2. Check if server requires VPN or specific network access
+3. Test server URL in browser or with curl
+4. Check if server requires authentication (OAuth setup needed)
+
+### "Server Not Found" Errors
+
+**Symptoms:**
+- Error: `Server '<name>' not found`
+
+**Solutions:**
+1. Check server config file exists in `servers/` directory
+2. Verify filename matches: `<server-name>.json`
+3. Ensure JSON is valid (no syntax errors)
+4. Check server name in config matches what you're calling
+
+### OAuth Tokens Expired
+
+**Symptoms:**
+- Tools worked before, now getting auth errors
+- "Token expired" or "Invalid token" messages
+
+**Solutions:**
+1. Re-run OAuth wizard: `npm run oauth <server-name>`
+2. Check if server requires token refresh (some expire quickly)
+3. Verify `.oauth-tokens.json` is not corrupted
+
+### Installation Issues
+
+**Symptoms:**
+- `npm install` fails
+- Missing dependencies errors
+
+**Solutions:**
+1. Check Node.js version: `node -v` (need v18+)
+2. Clear npm cache: `npm cache clean --force`
+3. Delete `node_modules` and `package-lock.json`, then `npm install` again
+4. Check internet connection for package downloads
+
+### Common Mistakes
+
+❌ **Calling tools before OAuth setup**
+- Many servers require OAuth. Run `npm run oauth:status` first
+
+❌ **Wrong server name in calls**
+- Use exact server name from config file (case-sensitive)
+
+❌ **Disabled servers**
+- Check `"enabled": true` in server config
+
+❌ **Missing required parameters**
+- Each tool has required parameters - check with `list-tools` for schema
+
+### Getting Help
+
+If you're still stuck:
+1. Check the logs in console output (look for error messages)
+2. Review server config JSON for typos
+3. Test the MCP server URL directly with curl
+4. Open an issue on GitHub with error details
+
+---
+
 ## Development
 
 Built by **Toki** (OpenClaw Assistant) for @ImrKhn03 and the OpenClaw community!
